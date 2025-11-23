@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form action="" method="POST">
+        <label for="nazwa">nazwa</label>
+        <input type="text" name="nazwa" id="nazwa"><br><br>
+
+        <label for="opis">opis</label>
+        <input type="text" name="opis" id="opis"><br><br>
+
+        <label for="cena">cena</label>
+        <input type="number" name="cena" id="cena"><br><br>
+
+        <label for="zdjecie">zdjęcie</label>
+        <input type="text" name="zdjecie" id="zdjecie" accept="image/*"><br><br>
+
+        <button onclick="sigma()">DODAJ</button><br><br>
+
+    </form>
+
+    <form action="" method="post">
+
+        <label for="pole"></label>
+        <input type="text" name="pole" id="pole"><br><br>
+
+        <button onclick="skrypt3()">Pokaż opis</button><br><br>
+
+    </form>
+
+
+    <label for="edycja"></label>
+    <input type="text" name="edycja" id="edycja" placeholder="Dodaj zadanie...">
+
+    <button onclick="dodawaj()">Dodaj</button><br><br>
+
+    <form action="" method="post">
+
+    <label for="zadanie">Zadanie do wykonania:</label>
+    <input type="text" id="zadanie" name="zadanie"><br>
+
+    <label for="data">Data realizacji</label>
+    <input type="date" name="data" id="data">
+
+    <button onclick="dodajemy()">Dodaj</button><br><Br>
+
+    </form>
+
+    <label for="obraz">Wybierz obraz: </label>
+    <input type="file" id="obraz" name="obraz" accept="image/jpeg"><br><br>
+
+    <label for="kopie">Liczba kopii: </label>
+    <input type="number" id="kopie" name="kopie"><br><br>
+
+    <input type="radio" id="blyszczacy" name="papier" value="błyszczący" checked>
+    <label for="blyszczacy">Papier błyszczący</label><br>
+
+    <input type="radio" id="matowy" name="papier" value="matowy">
+    <label for="matowy">Papier matowy</label><br><br>
+    
+    <button onclick="submit()">Dodaj do koszyka</button><br><br>
+
+    <form action="" method="post">
+
+        <label for="cos1"></label>
+        <select id="cos1" name="cos1">
+            <option value="nr1">Pieśń nad pieśniami</option>
+            <option value="nr2">opcja2</option>
+            <option value="nr3">opcja3</option>
+        </select>
+
+        <button onclick="rezerwuj()">Rezerwuj</button><br>
+
+        <label for="cos2"></label>
+        <select id="cos2" name="cos2">
+            <option value="nrm1">Iliada</option>
+            <option value="nrm2">opcja2</option>
+            <option value="nrm3">opcja3</option>
+        </select>
+
+        <button onclick="rezerwuj()">Rezerwuj</button><br>
+
+        <label for="cos3"></label>
+        <select id="cos3" name="cos3">
+            <option value="nrma1">Zemsta</option>
+            <option value="nrma2">opcja2</option>
+            <option value="nrma3">opcja3</option>
+        </select>
+
+        <button onclick="rezerwuj()">Rezerwuj</button><br><br>
+
+    </form>
+
+  <form action="" method="POST">
+
+        <label for="miejsce">Miejsce wycieczki:</label><br>
+        <select id="miejsce" name="miejsce">
+            <option value="dsd">OPCJA2121</option>
+        </select>
+
+    <label for="dorosli">Ile dorosłych?</label>
+    <input type="number" id="dorosli" name="dorosli"><br>
+
+        <label for="dzieci">Ile dzieci?</label><br>
+        <input type="number" id="dzieci" name="dzieci"><br>
+
+        <label for="termin">Termin:</label><br>
+        <input type="date" id="termin" name="termin"><br><br>
+
+    <button type="submit">Symulacja ceny</button><br><br>
+
+</form>
+
+<form action="" method="post">
+
+    <label for="lista"></label>
+    <select id="list" name="list">
+        <option value="a">Bułgaria</option>
+    </select>
+
+    <button onclick="przycis()">Szukaj</button><br><br>
+
+</form>
+
+<form action="" method="post">
+
+    <label for="pracownicy">Ilu co najmniej pracowników potrzebujesz?</label><br>
+    <input type="number" id="pracownicy" name="pracownicy">
+
+    <button type="submit">Szukaj firm</button><br><br>
+
+</form>
+
+<form action="" method="post">
+
+    <label for="selectem"></label>
+    <select id="selectem" name="selectem">
+        <option id="darlow">Darłowo</option>
+    </select><br>
+
+    
+    <input type="radio" id="fale" name="fale" value="malowanie" checked>
+    <label for="fale">malowanie</label><br>
+
+    <input type="radio" id="radiowe" name="radiowe" value="gipsowanie">
+    <label for="radiowe">gipsowanie</label><br>
+
+    <button onclick="kkd()">Szukaj klietów</button><br><br>
+
+</form>
+
+<form method="post" action="">
+    <label for="imie">Imię</label><br>
+    <input type="text" id="imie" name="imie" required><br><br>
+
+    <label for="nazwisko">Nazwisko</label><br>
+    <input type="text" id="nazwisko" name="nazwisko" required><br><br>
+
+    <label for="wiek">Wiek</label><br>
+    <input type="number" id="wiek" name="wiek" min="1" step="1" required><br><br>
+
+    <label for="kurs">Rodzaj kursu</label><br>
+    <select id="kurs" name="kurs" required>
+        <option value="opdsda">Język angielski</option>
+    </select><br><br>
+
+    <button type="submit">Dodaj dane</button>
+</form>
+
+
+</body>
+</html>
